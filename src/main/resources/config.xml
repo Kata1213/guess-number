@@ -7,11 +7,14 @@
     <bean class="GussNumber">
         <constructor-arg>
             <list>
-                <ref bean="oddRuleFinder"></ref>
+                <ref bean="eventRuleFinder"></ref>
+                <ref bean="divideFinder"></ref>
             </list>
         </constructor-arg>
     </bean>
-    <bean id="oddRuleFinder" class="OddRule">
+    <bean id="eventRuleFinder" class="EventRule"></bean>
+    <bean id="divideFinder" class="DivideRule">
+
 
     </bean>
 </beans>
